@@ -22,10 +22,14 @@ main {
 }
 
 .main-container {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   display: flex;
   width: 100vw;
   overflow-y: scroll;
+  background-color: #232341;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-content: flex-end; */
 }
 
 .bottom-toolbar {
@@ -258,4 +262,27 @@ ul :nth-child(2) {
   border-radius: 50%;
   background-color: grey;
   height: 30px;
+}
+
+.upgrade-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #04043f29;
+  height: 9%;
+  align-items: center;
+  padding-right: 10px;
+}
+
+button {
+  display: flex;
+  background-color: transparent;
+  color: white;
+  align-items: center;
+  height: 50%;
+  border-color: #ffffff7d;
+  border-radius: 20px;
+  width: 20%;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
