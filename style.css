@@ -129,4 +129,21 @@ main {
 .song-options {
   color: white;
   display: flex;
+  width: 12%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-options {
+  display: flex;
+  column-gap: 20px;
+}
+
+.volume-bar {
+  display: flex;
+  border: solid 1px #363636;
+  background-color: #363636;
+  border-radius: 5px;
+  width: 45%;
+  height: 7px;
 }
