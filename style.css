@@ -5,6 +5,11 @@
   font-family: "Roboto", "Arial", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
 .sidebar {
   border: 5px solid red;
   display: flex;
@@ -14,17 +19,60 @@
 .main-container {
   border: 5px solid blue;
   display: flex;
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
+  overflow-y: scroll;
 }
 
 .bottom-toolbar {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   display: flex;
-  height: 70px;
+  height: 73px;
+  background-color: rgb(41, 41, 41);
 }
 
-main {
+.current-song {
   display: flex;
-  flex-grow: 1;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  width: 11%;
+  justify-content: space-between;
+}
+
+.current-info {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: small;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.current-artist {
+  display: flex;
+  color: white;
+}
+
+.current-title {
+  display: flex;
+  color: grey;
+}
+
+.icon-xs {
+  display: flex;
+  color: grey;
+  justify-content: center;
+  padding-left: 12px;
+  flex-wrap: wrap;
+  align-content: center;
+  column-gap: 15px;
+}
+
+.current-album {
+  position: relative;
+  height: 96%;
+  width: 25%;
+  padding: 15px 0;
+  padding-left: 10px;
 }
