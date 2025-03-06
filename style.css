@@ -85,6 +85,45 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  width: 40%;
+}
+
+.player-controls {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: larger;
+  align-items: center;
+}
+
+.player-progress {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-time {
+  display: flex;
+  font-size: smaller;
+}
+
+.song-bar {
+  display: flex;
+  border: solid 1px #363636;
+  background-color: #363636;
+  border-radius: 5px;
+  width: 85%;
+  height: 7px;
+}
+
+.progress-bar {
+  display: flex;
+  background-color: grey;
+  border-radius: 5px;
+  height: 100%;
+  width: 25%;
 }
 
 .song-options {
