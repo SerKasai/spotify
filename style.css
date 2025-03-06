@@ -29,6 +29,7 @@ main {
   display: flex;
   height: 73px;
   background-color: rgb(41, 41, 41);
+  justify-content: space-between;
 }
 
 .current-song {
@@ -75,4 +76,13 @@ main {
   width: 25%;
   padding: 15px 0;
   padding-left: 10px;
+}
+
+.player {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
