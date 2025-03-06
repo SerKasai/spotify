@@ -168,11 +168,12 @@ main {
   display: flex;
   flex-direction: column;
   width: 15%;
-  row-gap: 5px;
+  row-gap: 10px;
 }
 
 .side-menu span {
-  color: grey;
+  color: rgb(102, 102, 102);
+  ;
 }
 
 nav :nth-child(1) span {
@@ -194,11 +195,13 @@ nav :nth-child(1) span {
 }
 
 .playlist span {
-  color: grey;
+  color: rgb(102, 102, 102);
+  ;
 }
 
 .playlist i {
-  color: grey;
+  color: rgb(102, 102, 102);
+  ;
   font-size: xxx-large;
 }
 
@@ -206,7 +209,7 @@ nav :nth-child(1) span {
   color: white;
 }
 
-ul :nth-child(1) span {
+.playlist :nth-child(1) span {
   color: white;
   text-transform: uppercase;
 }
@@ -215,4 +218,44 @@ ul :nth-child(2) {
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 10px;
+  padding: 10px 0;
+}
+
+.install {
+  display: flex;
+  color: rgb(102, 102, 102);
+  column-gap: 20px;
+  width: 25px;
+}
+
+.bar {
+  border-bottom: 2px solid rgb(102, 102, 102);
+  width: 90%;
+}
+
+.install img {
+  color: rgb(102, 102, 102);
+}
+
+.username {
+  display: flex;
+  column-gap: 17px;
+  width: 25px;
+}
+
+.username span {
+  color: white;
+}
+
+.username img {
+  border-radius: 50%;
+  background-color: grey;
+  height: 30px;
 }
