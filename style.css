@@ -11,9 +11,13 @@ main {
 }
 
 .sidebar {
-  border: 5px solid red;
+  /* border: 5px solid red; */
+  background-color: black;
   display: flex;
   width: 240px;
+  flex-direction: column;
+  padding-left: 15px;
+  justify-content: space-between;
 }
 
 .main-container {
@@ -146,4 +150,69 @@ main {
   border-radius: 5px;
   width: 45%;
   height: 7px;
+}
+
+.logo {
+  display: flex;
+  padding-top: 10px;
+
+  width: 155px;
+}
+
+.main-commands {
+  display: flex;
+}
+
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  row-gap: 5px;
+}
+
+.side-menu span {
+  color: grey;
+}
+
+nav :nth-child(1) span {
+  color: white;
+}
+
+.side-menu div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 20px;
+  padding: 10px 0;
+}
+
+.playlist span {
+  color: grey;
+}
+
+.playlist i {
+  color: grey;
+  font-size: xxx-large;
+}
+
+.title-list {
+  color: white;
+}
+
+ul :nth-child(1) span {
+  color: white;
+  text-transform: uppercase;
+}
+
+ul :nth-child(2) {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
