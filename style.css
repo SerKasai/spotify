@@ -34,6 +34,8 @@ main {
   background-color: rgb(41, 41, 41);
   justify-content: space-between;
   padding: 0 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .current-song {
@@ -86,15 +88,16 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 40%;
+  width: 35%;
+  align-content: center;
 }
 
 .player-controls {
-  width: 40%;
   display: flex;
   justify-content: space-evenly;
   font-size: larger;
   align-items: center;
+  column-gap: 25px;
 }
 
 .player-controls i {
@@ -173,6 +176,12 @@ main {
   width: 120px;
 }
 
+.logo-small {
+  padding: 20px 0;
+  width: 25px;
+  display: none;
+}
+
 .main-commands {
   display: flex;
 }
@@ -198,6 +207,19 @@ nav :nth-child(1) span {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  left: -15px;
+  position: relative;
+  padding-left: 11px;
+  width: 45px;
+}
+
+.side-menu div:nth-child(1) {
+  border-left: 3px solid green;
+  left: -15px;
+  position: relative;
+  padding-left: 11px;
+  width: 45px;
 }
 
 .playlist {
@@ -345,7 +367,6 @@ button {
 .main-flex-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   overflow-y: scroll;
   height: 84vh;
 }
@@ -353,8 +374,9 @@ button {
 .album-container {
   display: flex;
   padding: 15px;
-  column-gap: 15px;
+  column-gap: 35px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .album-container div {
@@ -393,8 +415,10 @@ button {
 .album-container2 {
   display: flex;
   padding: 15px;
-  column-gap: 15px;
-  justify-content: space-between;
+  column-gap: 35px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
 }
 
 .album-container2 div {
@@ -432,9 +456,11 @@ button {
 
 .album-container3 {
   display: flex;
-  padding: 15px;
+  padding: 35px;
   column-gap: 15px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
 }
 
 .album-container3 div {
@@ -570,6 +596,16 @@ li span:hover {
     justify-content: flex-start;
   }
 
+  .album-container2 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .album-container3 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
   .song-menu {
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -585,25 +621,133 @@ li span:hover {
     flex-grow: 1;
     min-width: 207px;
   }
-
-  .player-progress {
-    min-width: 276px;
-  }
 }
 
-@media screen and (max-width: 807px) {
-  .player-controls {
-    width: 100%;
+@media screen and (max-width: 846px) {
+  .album-container {
+    justify-content: space-evenly
+  }
+
+  .album-container2 {
+    justify-content: space-evenly
+  }
+
+  .album-container3 {
+    justify-content: space-evenly
   }
 }
 
 @media screen and (max-width: 715px) {
 
   .sidebar {
+    min-width: 55px;
+  }
+
+  .logo {
     display: none;
   }
 
+  .logo-small {
+    display: flex;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .main-commands {
+    flex-grow: 1;
+  }
+
+  .side-menu {
+    width: 100%;
+  }
+
+  .side-menu span {
+    display: none;
+  }
+
+  .side-menu div {
+    align-items: center;
+    left: -10px;
+    position: relative;
+    padding: 10px 10px;
+    width: 45px;
+  }
+
+  .profile span {
+    display: none;
+  }
+
+  .profile li:nth-child(2) {
+    display: none;
+  }
+
+
+  /* @media screen and (max-width: 375px) { */
   .bottom-toolbar {
-    height: 74px;
+    height: 73px;
+    width: 100%;
+    padding: 0 10px 0 5px;
+  }
+
+  .main-container {
+    height: 92vh;
+  }
+
+  .album-container img {
+    max-width: 155px;
+  }
+
+  .album-container div {
+    padding-bottom: 15px;
+    max-width: 155px;
+  }
+
+  .album-container2 img {
+    max-width: 155px;
+  }
+
+  .album-container2 div {
+    padding-bottom: 15px;
+    max-width: 155px;
+  }
+
+  .album-container3 img {
+    max-width: 155px;
+  }
+
+  .album-container3 div {
+    padding-bottom: 15px;
+    max-width: 155px;
+  }
+
+  .current-song {
+    min-width: 118px;
+  }
+
+  .current-info {
+    width: 40px;
+  }
+
+  .icon-xs {
+    padding-left: 12px;
+    row-gap: 5px;
+    flex-direction: column;
+  }
+
+  .button-options {
+    column-gap: 10px;
+  }
+
+  .player-progress {
+    width: 100%;
+  }
+
+  .song-options {
+    width: 189px;
+    flex-grow: 0;
   }
 }
+
+/* } */
